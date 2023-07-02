@@ -7,6 +7,7 @@ import Orders from "./components/admin/orders/Orders";
 import AddMenu from "./components/admin/menus/AddMenu";
 import UpdateMenu from "./components/admin/menus/UpdateMenu";
 import AddCategory from "./components/admin/menus/AddCategory";
+import Main from "./components/client/main/Main"
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           <Route path="/menus/updateMenu/:id_menu" element = {<UpdateMenu />} />
           <Route path="/menus/addCategory" element = {<AddCategory />} />
           <Route path="/orders" element = {<Orders />} />
+
+          {/*client*/}
+          <Route path="/" element = {<Main />} />
 
         </Route>
       </Routes>
